@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        style="@style/title_style"
+        android:id="@+id/title"
+        android:text="@string/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toggle"
+        app:layout_constraintHorizontal_weight="6"/>
+
+    <Button
+        style="@style/toggle_btn_style"
+        android:id="@+id/toggle"
+        android:text="@string/toggle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        android:onClick="toggle"
+        />
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/top_left"
+        android:text="@string/top_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_left"
+        app:layout_constraintEnd_toStartOf="@+id/top_right"
+        android:onClick="playHello"/>
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/top_right"
+        android:text="@string/top_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_right"
+        app:layout_constraintStart_toEndOf="@+id/top_left"
+        android:onClick="playThankYou"/>
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/bottom_left"
+        android:text="@string/bottom_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_right"
+        android:onClick="playExert"/>
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/bottom_right"
+        android:text="@string/bottom_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bottom_left"
+        android:onClick="playFood"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

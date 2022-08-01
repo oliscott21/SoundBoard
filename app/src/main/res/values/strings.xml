@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SoundBoard</string>
+    <string name="title">Diné Bizaad</string>
+    <string name="toggle_btn">TOGGLE DELAY</string>
+    <string name="top_left">Yá\'át\'ééh (Hello)</string>
+    <string name="top_right">Ahéhee\' (Thank you)</string>
+    <string name="bottom_left">Yéégo (Exert More Effort)</string>
+    <string name="bottom_right">Ch\'iyáán (Food)</string>
+</resources>
